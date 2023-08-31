@@ -6,10 +6,8 @@ public class TestEmployee {
         diego.setName("Diego");
         diego.setDocument("444556665");
         diego.setSalary(2000);
-        diego.setType(0);
 
         System.out.println(diego.getSalary());
-        System.out.println(diego.getBonus());
 
     }
 }

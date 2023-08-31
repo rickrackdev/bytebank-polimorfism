@@ -4,7 +4,6 @@ public class Employee {
     private String name;
     private String document;
     private double salary;
-    private int type;
 
     //creating our constructor method
     public Employee(){
@@ -36,23 +35,4 @@ public class Employee {
         this.salary = salary;
     }
 
-    public int getType() {
-        return type;
-    }
-
-    public void setType(int type) {
-        this.type = type;
-    }
-
-    public double getBonus(){
-        //if type == 1 is a manager
-        //if type == 0 is an employee
-        if (this.type == 0){
-            return this.salary * 0.10;
-        } else if (this.type == 1) {
-            return  this.salary;
-        } else{
-            return 0;
-        }
-    }
 }

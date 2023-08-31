@@ -8,6 +8,5 @@ public class Manager extends Employee{
     public boolean logIn(String password){
         return this.password == "rickrack";
     }
-
-
+    
 }
