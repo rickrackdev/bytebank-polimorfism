@@ -8,6 +8,7 @@ public class TestEmployee {
         diego.setSalary(2000);
 
         System.out.println(diego.getSalary());
+        System.out.println(diego.getBonus());
 
     }
 }
