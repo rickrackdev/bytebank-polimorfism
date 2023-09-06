@@ -3,7 +3,7 @@ public class CheckingsAccount extends Account{
         super(agency, number);
     }
 
-    @Override
+
     public boolean withdraw(double balance) {
         double commission = 0.2;
         return super.withdraw(balance + commission);

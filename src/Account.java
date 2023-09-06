@@ -1,5 +1,5 @@
-class Account {
-    private double balance;
+public abstract class Account {
+    protected double balance;
     private int agency;
     private int number;
     private Client owner;
@@ -21,9 +21,7 @@ class Account {
     }
 
     //deposit does not return a value this is established by the type of method
-    public void deposit(double balance) {
-        this.balance += balance;
-    }
+    public abstract void deposit(double balance);
 
     //withdraw does return a value
     public boolean withdraw(double balance) {
