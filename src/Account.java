@@ -37,7 +37,7 @@ class Account {
 
     public boolean transfer(double balance, Account account){
         if (this.balance >= balance){
-            this.balance -= balance;
+            this.withdraw(balance);
             account.deposit(balance);
             return true;
         } else {
