@@ -1,7 +1,8 @@
-public class Manager extends Employee implements Auth{
+public class Administrator extends Employee implements Auth  {
 
-    public double getBonus(){
-        return super.getSalary() + this.getSalary() * 0.5;
+    @Override
+    public double getBonus() {
+        return 0;
     }
 
     @Override

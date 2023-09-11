@@ -1,4 +1,4 @@
-public class Client {
+public class Client implements Auth{
     private String name;
     private String idNumber;
     private String occupation;
@@ -25,5 +25,15 @@ public class Client {
 
     public void setOccupation(String occupation) {
         this.occupation = occupation;
+    }
+
+    @Override
+    public void setPassword(String password) {
+
+    }
+
+    @Override
+    public boolean logIn(String password) {
+        return false;
     }
 }

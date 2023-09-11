@@ -1,7 +1,7 @@
 public class TestBonusControl {
 
     public static void main(String[] args){
-        Employee diego = new Employee();
+        Employee diego = new Manager();
         diego.setSalary(2000);
 
         Manager jimena = new Manager();

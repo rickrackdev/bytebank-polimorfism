@@ -1,7 +1,7 @@
 public class TestEmployee {
 
     public static void main (String[] args){
-        Employee diego = new Employee();
+        Employee diego = new Manager();
 
         diego.setName("Diego");
         diego.setDocument("444556665");
