@@ -2,6 +2,10 @@ public class Client implements Auth{
     private String name;
     private String idNumber;
     private String occupation;
+    private AuthUtil util;
+    public Client(){
+        this.util = new AuthUtil();
+    }
 
     public String getName() {
         return name;
@@ -28,12 +32,12 @@ public class Client implements Auth{
     }
 
     @Override
-    public void setPassword(String password) {
-
+    public void setPassword(int password) {
+        this.util.setPassword(password);
     }
 
     @Override
-    public boolean logIn(String password) {
-        return false;
+    public boolean logIn(int password) {
+       return this.util.LogIn(password);
     }
 }

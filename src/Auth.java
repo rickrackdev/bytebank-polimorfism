@@ -1,6 +1,6 @@
-public  interface Auth {
-    public void setPassword(String password);
+public abstract interface Auth {
+    public abstract void setPassword(int password);
 
-    public boolean logIn(String password);
+    public abstract boolean logIn(int password);
 
 }

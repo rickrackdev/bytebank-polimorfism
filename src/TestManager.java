@@ -5,10 +5,10 @@ public class TestManager {
         rick.setName("rick");
         rick.setDocument("210492204");
         rick.setSalary(5000);
-        rick.setPassword("rickrack");
+        rick.setPassword(1234);
 
         System.out.println(rick.getSalary());
-        System.out.println(rick.logIn("rickrack"));
+        System.out.println(rick.logIn(1234));
 
     }
 }
