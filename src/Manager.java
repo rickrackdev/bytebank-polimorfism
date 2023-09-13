@@ -1,26 +1,21 @@
 public class Manager extends Employee implements Auth{
 
-    private int password;
+  private AuthUtil util;
+  public Manager(){
+      this.util = new AuthUtil();
+  }
 
     public double getBonus(){
         return super.getSalary() + this.getSalary() * 0.5;
     }
 
-    public int getPassword() {
-        return password;
-    }
-
     @Override
     public void setPassword(int password) {
-        this.password = password;
+        this.util.setPassword(password);
     }
 
     @Override
     public boolean logIn(int password) {
-        if(this.password == password){
-            return true;
-        }else {
-            return false;
-        }
+      return this.util.LogIn(password);
     }
 }
