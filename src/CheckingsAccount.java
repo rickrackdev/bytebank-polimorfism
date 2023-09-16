@@ -9,8 +9,8 @@ public class CheckingsAccount extends Account{
     }
 
 
-    public boolean withdraw(double balance) {
+    public void withdraw(double balance) {
         double commission = 0.2;
-        return super.withdraw(balance + commission);
+        super.withdraw(balance + commission);
     }
 }

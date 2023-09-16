@@ -13,7 +13,7 @@ public abstract class Account {
             this.agency = agency;
         }
         total++;
-        System.out.println("total accounts " + total);
+        System.out.println("created an account " + total);
     }
 
     public static int getTotal() {
@@ -24,13 +24,15 @@ public abstract class Account {
     public abstract void deposit(double balance);
 
     //withdraw does return a value
-    public boolean withdraw(double balance) {
-        if (this.balance >= balance) {
+
+    //implementing an exception
+    //everytime we handle an exception it's done before the method
+    //as every error handling needs to happen before any method implementation
+    public void withdraw(double balance) {
+        if(this.balance < balance){
+            throw new InsufficientBalanceException("Not enough balance");
+        }
             this.balance -= balance;
-            return true;
-        } else {
-            return false;
-            }
         }
 
     public boolean transfer(double balance, Account account){
