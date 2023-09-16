@@ -28,7 +28,7 @@ public abstract class Account {
     //implementing an exception
     //everytime we handle an exception it's done before the method
     //as every error handling needs to happen before any method implementation
-    public void withdraw(double balance) {
+    public void withdraw(double balance) throws InsufficientBalanceException {
         if(this.balance < balance){
             throw new InsufficientBalanceException("Not enough balance");
         }
@@ -37,7 +37,11 @@ public abstract class Account {
 
     public boolean transfer(double balance, Account account){
         if (this.balance >= balance){
-            this.withdraw(balance);
+            try {
+                this.withdraw(balance);
+            } catch (InsufficientBalanceException e) {
+                e.printStackTrace();
+            }
             account.deposit(balance);
             return true;
         } else {

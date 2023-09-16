@@ -9,7 +9,7 @@ public class CheckingsAccount extends Account{
     }
 
 
-    public void withdraw(double balance) {
+    public void withdraw(double balance) throws InsufficientBalanceException{
         double commission = 0.2;
         super.withdraw(balance + commission);
     }
