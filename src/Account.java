@@ -30,23 +30,14 @@ public abstract class Account {
     //as every error handling needs to happen before any method implementation
     public void withdraw(double balance) throws InsufficientBalanceException {
         if(this.balance < balance){
-            throw new InsufficientBalanceException("Not enough balance");
+            throw new InsufficientBalanceException("Balance: " + this.balance + ", Amount: " + balance);
         }
             this.balance -= balance;
         }
 
-    public boolean transfer(double balance, Account account){
-        if (this.balance >= balance){
-            try {
-                this.withdraw(balance);
-            } catch (InsufficientBalanceException e) {
-                e.printStackTrace();
-            }
-            account.deposit(balance);
-            return true;
-        } else {
-            return false;
-        }
+    public void transfer(double balance, Account account) throws InsufficientBalanceException{
+        this.withdraw(balance);
+        account.deposit(balance);
     }
     public double getBalance(){
         return balance;
