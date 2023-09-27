@@ -1,3 +1,9 @@
+package sv.bytebank.test;
+
+import sv.bytebank.model.Account;
+import sv.bytebank.model.CheckingsAccount;
+import sv.bytebank.model.InsufficientBalanceException;
+
 public class WithdrawTest {
     public static void main(String[] args) {
         Account account = new CheckingsAccount(123, 321);

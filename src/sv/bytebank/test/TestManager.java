@@ -1,3 +1,7 @@
+package sv.bytebank.test;
+
+import sv.bytebank.model.Manager;
+
 public class TestManager {
 
     public static void main(String[] args){

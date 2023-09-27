@@ -1,3 +1,5 @@
+package sv.bytebank.model;
+
 public class Administrator extends Employee implements Auth  {
 
     private AuthUtil util;

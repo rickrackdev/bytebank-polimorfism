@@ -1,3 +1,5 @@
+package sv.bytebank.model;
+
 public class Client implements Auth{
     private String name;
     private String idNumber;

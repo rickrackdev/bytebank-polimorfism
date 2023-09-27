@@ -1,3 +1,5 @@
+package sv.bytebank.model;
+
 public abstract class Account {
     protected double balance;
     private int agency;

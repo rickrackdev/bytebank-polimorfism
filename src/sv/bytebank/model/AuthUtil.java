@@ -1,3 +1,5 @@
+package sv.bytebank.model;
+
 public class AuthUtil {
     private int password;
 

@@ -1,3 +1,5 @@
+package sv.bytebank.model;
+
 public class InternalSystem {
 
     private int password = 12345;

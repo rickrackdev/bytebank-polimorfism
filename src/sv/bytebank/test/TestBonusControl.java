@@ -1,3 +1,7 @@
+package sv.bytebank.test;
+
+import sv.bytebank.model.*;
+
 public class TestBonusControl {
 
     public static void main(String[] args){

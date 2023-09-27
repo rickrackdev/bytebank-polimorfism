@@ -1,3 +1,10 @@
+package sv.bytebank.test;
+
+import sv.bytebank.model.Administrator;
+import sv.bytebank.model.Auth;
+import sv.bytebank.model.InternalSystem;
+import sv.bytebank.model.Manager;
+
 public class TestInternalSystem {
     public static void main(String[] args) {
         InternalSystem system = new InternalSystem();

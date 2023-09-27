@@ -1,3 +1,5 @@
+package sv.bytebank.model;
+
 public abstract class Employee {
 
     //creating the attributes of the workers object
